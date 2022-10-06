@@ -16,24 +16,224 @@
 
 <body class="main-bg">
     <aside class="menu white-bg">
-        <section class="main-content menu-content">
-            <h1><a href="#">LOGO</a></h1>
+        <div class="main-content menu-content">
+            <h1><a href="#home">LOGO</a></h1>
             <nav>
                 <ul>
-                     <li><a href="#">intro</a></li>
-                    <li><a href="#">top 3</a></li>
-                    <li><a href="#">gallery</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#grid-one">grid-one</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#grid-two">grid-two</a></li>
+                    <li><a href="#pracing">pracing</a></li>
+                    <li><a href="#contact">contact</a></li>
 
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
 
-    <section class="section"></section>
-    <section class="section white-bg"></section>
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>January Brings us firefox 85</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error possimus, inventore officia quibusdam
+                    repudiandae fugiat, soluta tenetur provident perferendis neque architecto, deleniti voluptatem
+                    asperiores
+                    dolorum nihil mollitia enim amet!</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/foto-javascript.svg" alt="Logo de HTML, CSS e. JS">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Top 3 Jobs</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">gallery</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1663568399694-fa3ee4fbb972?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNjYzNg&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>    
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1664136262345-daa7e71f0c0b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNzU4NA&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1661716984436-4f360051b24b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNzYyNA&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1662042494165-4985204a1b2b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNzY3Nw&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>    
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1663599592335-6f034ce8edd1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNzg0MQ&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>  
+                <div class="gallery-img">
+                    <img src="https://images.unsplash.com/photo-1661996308671-231bd56b8af9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY2NDMxNzg3NA&ixlib=rb-1.2.1&q=80&w=360" alt="random image from unsplash" />
+                </div>
+                 
+        </div>
+    </section>
+
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <p class="grid-description">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae sequi repudiandae nulla fugit, maiores nesciunt quasi architecto accusamus dolores, ducimus a rerum pariatur esse asperiores aliquid nobis eos. Architecto.</p>
+                </article>
+        </div>
+    </section>
+
+    <section id="pracing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>pracing</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+            
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 2</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 2</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 2</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>    
+        </div>
+    </section>
+
+    <section id="contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>January Brings us firefox 85</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error possimus, inventore officia quibusdam
+                    repudiandae fugiat, soluta tenetur provident perferendis neque architecto, deleniti voluptatem
+                    asperiores
+                    dolorum nihil mollitia enim amet!</p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/foto-javascript.svg" alt="Logo de HTML, CSS e. JS">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contect me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your name"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message id="message" cols="30" rows="10" placeholder="Your e-mail"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="full-width">Send message</button>
+                    </div>
+                </fieldset>
+                <footer class="footer white-bg">
+                    <p><a rel="nofollow" target="_blank" href="https://github.com/JVPola?tab=repositories">Feito por João Vitor Pola</a></p>
+                </footer>
+            </div>        
+        </div>
+
+
+    </section>
+
+
+    
 </body>
+
 </html>
-
-

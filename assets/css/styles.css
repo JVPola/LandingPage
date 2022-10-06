@@ -9,6 +9,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*
 font-family: 'Montserrat', sans-serif;
@@ -17,12 +18,14 @@ font-family: 'Open Sans', sans-serif;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,8 +38,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
-
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -63,6 +68,40 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 360px;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 00.1rem solid var(--light-gray-color);
+}
+
+tfoot td, thead th {
+    background: var(--light-gray-color);
+}
+
+
+.responsive-table {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
 .main-bg {
     background-image: url(../img/main-bg.svg.svg);
     background-position: center center;
@@ -71,12 +110,13 @@ a {
 }
 .white-bg {
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 10rem var(--gap);
 }
 
 .section {
@@ -88,6 +128,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
@@ -136,4 +177,162 @@ a {
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.menu-spacing {
+    height: 65px;
+}
+
+.intro-content {
+    position: relative;
+    /* top: -8rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content {
+    max-width: 64rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-one-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 10px 2px var(--secondary-color);
+}
+
+body .full-width {
+    flex: 1 1 100%
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+
+}
+
+.form-group ::placeholder {
+    color: #dcdcdc;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
 }
