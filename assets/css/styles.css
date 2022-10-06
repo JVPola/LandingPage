@@ -336,3 +336,8 @@ body .full-width {
     text-align: center;
     margin-top: 3rem;
 }
+
+.footer p {
+    margin: 0;
+    padding: 1rem;
+}
